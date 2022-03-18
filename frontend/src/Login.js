@@ -23,10 +23,25 @@ import { types } from "./types/types";
 import { AuthContext } from "./auth/authContext";
 import roles from "./helpers/roles";
 
-
+const adminUser = {
+  email: "sergio@gmail.com",
+  password: "12345"
+}
 
 
 const Login = () => {
+  const [user, setUser]= useState({email: "", password: ""});
+  const [error, setError]= useState("");
+
+  const Login= details=>{
+    console.log(details)
+  }
+
+  const Logout=()=>{
+    console.log(Logout)
+  }
+  
+  
  
   const navigate = useNavigate();
   const {dispatch, rolusuario, email}=useContext(AuthContext);

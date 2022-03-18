@@ -60,7 +60,7 @@ const Starter = () => {
         <Card>
           <CardTitle tag="h6" className="border-bottom p-3 mb-0">
             <i className="bi bi-bell"> </i>
-            Publica un proyecto
+            Publica un proyec
           </CardTitle>
           <CardBody>
           <Form  action={baseUrl} method="POST">
